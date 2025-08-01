@@ -467,6 +467,12 @@ async def get_market_data(symbol: str, limit: int = 100):
         limit=limit
     )
     data = await cursor.to_list(length=limit)
+    
+    # Remove MongoDB ObjectIds to make JSON serializable
+    for item in data:
+        if "_id" in item:
+            del item["_id"]
+    
     return data
 
 @api_router.get("/signals", response_model=List[TradeSignal])
