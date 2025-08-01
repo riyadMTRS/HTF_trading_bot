@@ -484,6 +484,11 @@ async def get_portfolio():
     if not portfolio:
         portfolio = Portfolio().dict()
         await db.portfolio.insert_one(portfolio)
+    
+    # Remove MongoDB ObjectId to make it JSON serializable
+    if "_id" in portfolio:
+        del portfolio["_id"]
+    
     return portfolio
 
 @api_router.get("/trades", response_model=List[PaperTrade])
