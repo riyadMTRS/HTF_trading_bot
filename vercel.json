@@ -3,7 +3,12 @@
   "builds": [
     {
       "src": "backend/server.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "env": {
+          "PIP_REQUIREMENTS_FILE": "backend/requirements.min.txt"
+        }
+      }
     },
     {
       "src": "frontend/package.json",
