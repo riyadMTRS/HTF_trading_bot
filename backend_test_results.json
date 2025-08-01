@@ -3,7 +3,7 @@
     "success": true,
     "message": "API is responding correctly",
     "details": null,
-    "timestamp": "2025-08-01T16:57:59.014599"
+    "timestamp": "2025-08-01T16:59:55.327815"
   },
   "Dashboard Stats": {
     "success": true,
@@ -15,16 +15,23 @@
       "active_positions": 0,
       "total_trades": 0,
       "recent_signals": 0,
-      "symbols_tracked": 0,
+      "symbols_tracked": 9,
       "bot_status": "STOPPED"
     },
-    "timestamp": "2025-08-01T16:57:59.066675"
+    "timestamp": "2025-08-01T16:59:55.341954"
   },
   "Portfolio Endpoint": {
-    "success": false,
-    "message": "HTTP 500",
-    "details": "Internal Server Error",
-    "timestamp": "2025-08-01T16:57:59.074771"
+    "success": true,
+    "message": "Portfolio data structure is valid",
+    "details": {
+      "id": "a152f0b4-6d0d-4a7d-b883-574a3bc1f75c",
+      "total_balance": 10000.0,
+      "available_balance": 10000.0,
+      "total_pnl": 0.0,
+      "positions": {},
+      "updated_at": "2025-08-01T16:55:22.570000"
+    },
+    "timestamp": "2025-08-01T16:59:55.353030"
   },
   "Start Trading Bot": {
     "success": true,
@@ -32,13 +39,13 @@
     "details": {
       "message": "Trading bot started successfully"
     },
-    "timestamp": "2025-08-01T16:57:59.081727"
+    "timestamp": "2025-08-01T16:59:55.402857"
   },
   "Bot Status Check": {
     "success": true,
     "message": "Bot status correctly shows RUNNING",
     "details": null,
-    "timestamp": "2025-08-01T16:58:01.093083"
+    "timestamp": "2025-08-01T16:59:57.413726"
   },
   "Stop Trading Bot": {
     "success": true,
@@ -46,42 +53,42 @@
     "details": {
       "message": "Trading bot stopped"
     },
-    "timestamp": "2025-08-01T16:58:01.100954"
+    "timestamp": "2025-08-01T16:59:57.420196"
   },
   "Signals Endpoint": {
     "success": true,
     "message": "No signals available yet (empty list)",
     "details": [],
-    "timestamp": "2025-08-01T16:58:01.109668"
+    "timestamp": "2025-08-01T16:59:57.468280"
   },
   "Trades Endpoint": {
     "success": true,
     "message": "No trades available yet (empty list)",
     "details": [],
-    "timestamp": "2025-08-01T16:58:01.158875"
+    "timestamp": "2025-08-01T16:59:57.475939"
   },
   "Market Data Collection": {
     "success": true,
     "message": "Market data endpoints working (no data yet - expected for new system)",
     "details": null,
-    "timestamp": "2025-08-01T16:58:11.278521"
+    "timestamp": "2025-08-01T17:00:07.566613"
   },
   "Technical Analysis Engine": {
     "success": true,
     "message": "Technical indicators endpoints working (no data yet - expected)",
     "details": null,
-    "timestamp": "2025-08-01T16:58:11.339023"
+    "timestamp": "2025-08-01T17:00:07.628643"
   },
   "AI Signal Generation": {
     "success": true,
     "message": "AI signal system ready (no signals yet - expected for new system)",
     "details": null,
-    "timestamp": "2025-08-01T16:58:26.393354"
+    "timestamp": "2025-08-01T17:00:22.643324"
   },
   "Paper Trading Engine": {
-    "success": false,
-    "message": "Error: Expecting value: line 1 column 1 (char 0)",
+    "success": true,
+    "message": "Paper trading system ready (no trades yet - expected for new system)",
     "details": null,
-    "timestamp": "2025-08-01T16:58:26.449687"
+    "timestamp": "2025-08-01T17:00:42.727849"
   }
 }
