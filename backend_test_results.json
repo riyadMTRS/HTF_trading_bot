@@ -1,0 +1,87 @@
+{
+  "Health Check": {
+    "success": true,
+    "message": "API is responding correctly",
+    "details": null,
+    "timestamp": "2025-08-01T16:57:59.014599"
+  },
+  "Dashboard Stats": {
+    "success": true,
+    "message": "All required fields present with valid data",
+    "details": {
+      "total_balance": 10000.0,
+      "available_balance": 10000.0,
+      "total_pnl": 0.0,
+      "active_positions": 0,
+      "total_trades": 0,
+      "recent_signals": 0,
+      "symbols_tracked": 0,
+      "bot_status": "STOPPED"
+    },
+    "timestamp": "2025-08-01T16:57:59.066675"
+  },
+  "Portfolio Endpoint": {
+    "success": false,
+    "message": "HTTP 500",
+    "details": "Internal Server Error",
+    "timestamp": "2025-08-01T16:57:59.074771"
+  },
+  "Start Trading Bot": {
+    "success": true,
+    "message": "Bot started successfully",
+    "details": {
+      "message": "Trading bot started successfully"
+    },
+    "timestamp": "2025-08-01T16:57:59.081727"
+  },
+  "Bot Status Check": {
+    "success": true,
+    "message": "Bot status correctly shows RUNNING",
+    "details": null,
+    "timestamp": "2025-08-01T16:58:01.093083"
+  },
+  "Stop Trading Bot": {
+    "success": true,
+    "message": "Bot stopped successfully",
+    "details": {
+      "message": "Trading bot stopped"
+    },
+    "timestamp": "2025-08-01T16:58:01.100954"
+  },
+  "Signals Endpoint": {
+    "success": true,
+    "message": "No signals available yet (empty list)",
+    "details": [],
+    "timestamp": "2025-08-01T16:58:01.109668"
+  },
+  "Trades Endpoint": {
+    "success": true,
+    "message": "No trades available yet (empty list)",
+    "details": [],
+    "timestamp": "2025-08-01T16:58:01.158875"
+  },
+  "Market Data Collection": {
+    "success": true,
+    "message": "Market data endpoints working (no data yet - expected for new system)",
+    "details": null,
+    "timestamp": "2025-08-01T16:58:11.278521"
+  },
+  "Technical Analysis Engine": {
+    "success": true,
+    "message": "Technical indicators endpoints working (no data yet - expected)",
+    "details": null,
+    "timestamp": "2025-08-01T16:58:11.339023"
+  },
+  "AI Signal Generation": {
+    "success": true,
+    "message": "AI signal system ready (no signals yet - expected for new system)",
+    "details": null,
+    "timestamp": "2025-08-01T16:58:26.393354"
+  },
+  "Paper Trading Engine": {
+    "success": false,
+    "message": "Error: Expecting value: line 1 column 1 (char 0)",
+    "details": null,
+    "timestamp": "2025-08-01T16:58:26.449687"
+  }
+}
