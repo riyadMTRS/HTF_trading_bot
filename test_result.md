@@ -252,10 +252,10 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Market Data Collection (Crypto, Forex, Gold)"
-    - "AI Trading Signal Generation"
-    - "Trading Bot Background Engine"
     - "Trading Dashboard UI"
+    - "Bot Control Interface"
+    - "Real-time Signal Visualization"
+    - "Portfolio and Trading History"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
