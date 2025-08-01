@@ -530,6 +530,12 @@ async def get_indicators(symbol: str, limit: int = 20):
         limit=limit
     )
     indicators = await cursor.to_list(length=limit)
+    
+    # Remove MongoDB ObjectIds to make JSON serializable
+    for item in indicators:
+        if "_id" in item:
+            del item["_id"]
+    
     return indicators
 
 @api_router.get("/dashboard-stats")
