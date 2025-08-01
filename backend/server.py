@@ -482,7 +482,15 @@ async def get_signals(limit: int = 50):
         limit=limit
     )
     signals = await cursor.to_list(length=limit)
-    return [TradeSignal(**signal) for signal in signals]
+    
+    # Remove MongoDB ObjectIds and convert to TradeSignal objects
+    clean_signals = []
+    for signal in signals:
+        if "_id" in signal:
+            del signal["_id"]
+        clean_signals.append(TradeSignal(**signal))
+    
+    return clean_signals
 
 @api_router.get("/portfolio")
 async def get_portfolio():
