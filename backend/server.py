@@ -512,7 +512,15 @@ async def get_trades(limit: int = 100):
         limit=limit
     )
     trades = await cursor.to_list(length=limit)
-    return [PaperTrade(**trade) for trade in trades]
+    
+    # Remove MongoDB ObjectIds and convert to PaperTrade objects
+    clean_trades = []
+    for trade in trades:
+        if "_id" in trade:
+            del trade["_id"]
+        clean_trades.append(PaperTrade(**trade))
+    
+    return clean_trades
 
 @api_router.get("/indicators/{symbol}")
 async def get_indicators(symbol: str, limit: int = 20):
