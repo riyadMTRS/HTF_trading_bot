@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python",
+      "config": {
+        "env": {
+          "PIP_REQUIREMENTS_FILE": "backend/requirements.min.txt"
+        }
+      }
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "workPath": "frontend",
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/server.py"
+    },
+    {
+      "src": "/(.*)",
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

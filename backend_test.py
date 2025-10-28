@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Any
 
 # Backend URL from frontend .env
-BACKEND_URL = "https://d3c8d006-c0d3-43c6-9e4f-c98d05940c38.preview.emergentagent.com/api"
+BACKEND_URL = "http://127.0.0.1:8000/api"
 
 class HTFTradingBotTester:
     def __init__(self):

@@ -3,92 +3,60 @@
     "success": true,
     "message": "API is responding correctly",
     "details": null,
-    "timestamp": "2025-08-01T16:59:55.327815"
+    "timestamp": "2025-08-01T19:45:49.398087"
   },
   "Dashboard Stats": {
-    "success": true,
-    "message": "All required fields present with valid data",
-    "details": {
-      "total_balance": 10000.0,
-      "available_balance": 10000.0,
-      "total_pnl": 0.0,
-      "active_positions": 0,
-      "total_trades": 0,
-      "recent_signals": 0,
-      "symbols_tracked": 9,
-      "bot_status": "STOPPED"
-    },
-    "timestamp": "2025-08-01T16:59:55.341954"
+    "success": false,
+    "message": "HTTP 500",
+    "details": "Internal Server Error",
+    "timestamp": "2025-08-01T19:46:19.505413"
   },
   "Portfolio Endpoint": {
-    "success": true,
-    "message": "Portfolio data structure is valid",
-    "details": {
-      "id": "a152f0b4-6d0d-4a7d-b883-574a3bc1f75c",
-      "total_balance": 10000.0,
-      "available_balance": 10000.0,
-      "total_pnl": 0.0,
-      "positions": {},
-      "updated_at": "2025-08-01T16:55:22.570000"
-    },
-    "timestamp": "2025-08-01T16:59:55.353030"
+    "success": false,
+    "message": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "details": null,
+    "timestamp": "2025-08-01T19:46:19.529007"
   },
   "Start Trading Bot": {
-    "success": true,
-    "message": "Bot started successfully",
-    "details": {
-      "message": "Trading bot started successfully"
-    },
-    "timestamp": "2025-08-01T16:59:55.402857"
-  },
-  "Bot Status Check": {
-    "success": true,
-    "message": "Bot status correctly shows RUNNING",
-    "details": null,
-    "timestamp": "2025-08-01T16:59:57.413726"
-  },
-  "Stop Trading Bot": {
-    "success": true,
-    "message": "Bot stopped successfully",
-    "details": {
-      "message": "Trading bot stopped"
-    },
-    "timestamp": "2025-08-01T16:59:57.420196"
+    "success": false,
+    "message": "HTTP 500",
+    "details": "Internal Server Error",
+    "timestamp": "2025-08-01T19:46:49.578055"
   },
   "Signals Endpoint": {
-    "success": true,
-    "message": "No signals available yet (empty list)",
-    "details": [],
-    "timestamp": "2025-08-01T16:59:57.468280"
+    "success": false,
+    "message": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "details": null,
+    "timestamp": "2025-08-01T19:46:49.586499"
   },
   "Trades Endpoint": {
-    "success": true,
-    "message": "No trades available yet (empty list)",
-    "details": [],
-    "timestamp": "2025-08-01T16:59:57.475939"
+    "success": false,
+    "message": "HTTP 500",
+    "details": "Internal Server Error",
+    "timestamp": "2025-08-01T19:47:19.651133"
   },
   "Market Data Collection": {
-    "success": true,
-    "message": "Market data endpoints working (no data yet - expected for new system)",
+    "success": false,
+    "message": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
     "details": null,
-    "timestamp": "2025-08-01T17:00:07.566613"
+    "timestamp": "2025-08-01T19:47:19.653601"
   },
   "Technical Analysis Engine": {
     "success": true,
     "message": "Technical indicators endpoints working (no data yet - expected)",
     "details": null,
-    "timestamp": "2025-08-01T17:00:07.628643"
+    "timestamp": "2025-08-01T19:47:19.659781"
   },
   "AI Signal Generation": {
-    "success": true,
-    "message": "AI signal system ready (no signals yet - expected for new system)",
+    "success": false,
+    "message": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
     "details": null,
-    "timestamp": "2025-08-01T17:00:22.643324"
+    "timestamp": "2025-08-01T19:48:04.732378"
   },
   "Paper Trading Engine": {
-    "success": true,
-    "message": "Paper trading system ready (no trades yet - expected for new system)",
+    "success": false,
+    "message": "Error: Expecting value: line 1 column 1 (char 0)",
     "details": null,
-    "timestamp": "2025-08-01T17:00:42.727849"
+    "timestamp": "2025-08-01T19:48:34.793904"
   }
 }

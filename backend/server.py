@@ -1,7 +1,7 @@
 from fastapi import FastAPI, APIRouter, HTTPException, BackgroundTasks
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
-from motor.motor_asyncio import AsyncIOMotorClient
+from mongomock_motor import AsyncMongoMockClient as AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
